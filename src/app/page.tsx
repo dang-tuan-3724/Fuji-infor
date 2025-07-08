@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 flex flex-col gap-16 my-16">
         <Hero />
         <Members />
         <Events />

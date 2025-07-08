@@ -20,7 +20,7 @@ export function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-4 z-50 mx-4 rounded-lg border border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="#home" className="font-headline text-xl font-bold text-primary">
           Fuji Club - 藤クラブ

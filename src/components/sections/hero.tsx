@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-[60vh] md:h-screen w-full flex items-end justify-start text-white">
+    <section id="home" className="relative h-[60vh] md:h-[calc(100vh-112px)] w-auto flex items-end justify-start text-white rounded-lg overflow-hidden mx-4">
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="Fuji Club members"

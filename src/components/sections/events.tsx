@@ -31,7 +31,7 @@ export function Events() {
   return (
     <motion.section
       id="events"
-      className="w-full py-16 md:py-24"
+      className="py-16 md:py-24 rounded-lg border mx-4"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
