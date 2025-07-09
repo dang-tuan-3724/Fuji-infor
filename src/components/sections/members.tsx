@@ -97,19 +97,19 @@ export function Members() {
                 exit="exit"
                 transition={{ duration: 0.3 }}
               >
-                <Card className="text-center overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <Card className="text-center overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl flex flex-col h-[320px]">
                   <CardHeader className="p-0">
                     <Image
                       src={member.imageUrl}
                       alt={member.name}
                       width={200}
                       height={200}
-                      className="w-full h-auto aspect-square object-cover"
+                      className="w-full h-[160px] aspect-square object-cover"
                       data-ai-hint="portrait person"
                     />
                   </CardHeader>
-                  <CardContent className="p-4">
-                    <p className="font-bold text-base truncate">{member.name}</p>
+                  <CardContent className="p-4 flex-1 flex flex-col justify-center min-h-[80px]">
+                    <p className="font-bold text-base break-words whitespace-normal">{member.name}</p>
                     <p className="text-sm text-muted-foreground">{member.generation}</p>
                     {member.isLeader && (
                       <p className="text-sm text-primary font-semibold">Trưởng ban</p>

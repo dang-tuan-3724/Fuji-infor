@@ -15,7 +15,8 @@ export type Member = {
 };
 
 export const members: Member[] = [
-  { id: 1, name: 'Hoàng Đình Anh Trung', phone: '0972345807', ID:'2213683', email:'trung.hoang796@hcmut.edu.vn', generation: 'F10', department: 'Ban Truyền Thông', imageUrl: 'https://placehold.co/200x200.png', isLeader: false, isPresident: true },
+  { id: 1, name: 'Đặng Minh Tuấn', phone: '0788778027', ID:'2213765', email:'tuan.dangminh372004@hcmut.edu.vn', generation: 'F10', department: 'Ban Truyền Thông', imageUrl: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/anhchandung.jpg', isLeader: false, isPresident: false },
+  { id: 22, name: 'Hoàng Đình Anh Trung', phone: '0972345807', ID:'2213683', email:'trung.hoang796@hcmut.edu.vn', generation: 'F10', department: 'Ban Truyền Thông', imageUrl: 'https://placehold.co/200x200.png', isLeader: false, isPresident: true },
   { id: 2, name: 'Nguyễn Thị Thanh Nhàn', phone: '0934497069', ID:'2356190049', email:'2356190049@hcmussh.edu.vn', generation: 'F10', department: 'Ban Đối Ngoại', imageUrl: 'https://placehold.co/200x200.png', isLeader: true, isPresident: false },
   { id: 3, name: 'Trần Hà Nam', phone: '0979943887', ID:'2212160', email:'tranhanamptag2004@gmail.com', generation: 'F10', department: 'Ban Tổ Chức Sự Kiện', imageUrl: 'https://placehold.co/200x200.png', isLeader: true, isPresident: false },
   { id: 4, name: 'Nguyễn Thị Ngọc Yến', phone: '0911967401', ID:'2356190122', email:'ngthngocyen015@gmail.com', generation: 'F10', department: 'Ban Chuyên Môn', imageUrl: 'https://placehold.co/200x200.png', isLeader: true, isPresident: false },
@@ -36,6 +37,5 @@ export const members: Member[] = [
   { id: 19, name: 'Nguyễn Vĩnh Tường', phone: '0886726745', ID:'2413895', email:'Tuong.nguyenvinh1201@hcmut.edu.vn', generation: 'F11', department: 'Ban Truyền Thông', imageUrl: 'https://placehold.co/200x200.png', isLeader: false, isPresident: false },
   { id: 20, name: 'Tiến Nguyễn Nguyệt Minh', phone: '0916818841', ID:'2312114', email:'minh.tiennguyen121@hcmut.edu.vn', generation: 'F11', department: 'Ban Truyền Thông', imageUrl: 'https://placehold.co/200x200.png', isLeader: false, isPresident: false },
   { id: 21, name: 'Trần Thị Xuân Mai', phone: '0947604323', ID:'2312023', email:'mai.tranmaitran23@hcmut.edu.vn', generation: 'F10', department: 'Ban Truyền Thông', imageUrl: 'https://placehold.co/200x200.png', isLeader: false, isPresident: false },
-  { id: 22, name: 'Đặng Minh Tuấn', phone: '0788778027', ID:'2213765', email:'tuan.dangminh372004@hcmut.edu.vn', generation: 'F10', department: 'Ban Truyền Thông', imageUrl: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/anhchandung.jpg', isLeader: false, isPresident: false },
   { id: 23, name: 'Nguyễn Đăng Phương Nam', phone: '0931252300', ID:'2312170', email:'nam.nguyen230405@hcmut.edu.vn', generation: 'F11', department: 'Ban Truyền Thông', imageUrl: 'https://placehold.co/200x200.png', isLeader: false, isPresident: false }
 ];

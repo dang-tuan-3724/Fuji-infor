@@ -37,7 +37,7 @@ export function Events() {
       viewport={{ once: true, amount: 0.1 }}
       variants={containerVariants}
     >
-      <div className="container max-w-7xl p-2">
+      <div className="container max-w-7xl p-8 ">
         <motion.h2
           className="text-center font-headline text-3xl md:text-4xl font-bold mb-12 text-primary"
           variants={itemVariants}
@@ -48,7 +48,7 @@ export function Events() {
         <motion.div variants={itemVariants}>
           <h3 className="font-headline text-2xl md:text-3xl font-semibold mb-8">Sắp diễn ra</h3>
           {upcomingEvents.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
               {upcomingEvents.map((event) => (
                 <motion.div key={event.id} variants={itemVariants}>
                   <EventCard event={event} />

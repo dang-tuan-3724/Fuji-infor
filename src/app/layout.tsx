@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Fuji Club Portfolio',
+  title: 'Fuji Club',
   description: 'Nơi giao lưu học hỏi về văn hóa Nhật Bản',
 };
 
