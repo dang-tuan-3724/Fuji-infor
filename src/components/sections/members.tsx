@@ -35,6 +35,13 @@ const itemVariants = {
   exit: { y: -20, opacity: 0 }
 };
 
+
+function getDisplayName(fullName: string) {
+  const parts = fullName.trim().split(' ');
+  if (parts.length <= 2) return fullName;
+  return parts.slice(-2).join(' ');
+}
+
 export function Members() {
   const [selectedDept, setSelectedDept] = useState<Member['department'] | 'Tất cả'>('Tất cả');
 
@@ -109,13 +116,13 @@ export function Members() {
                     />
                   </CardHeader>
                   <CardContent className="p-4 flex-1 flex flex-col justify-center min-h-[80px]">
-                    <p className="font-bold text-base break-words whitespace-normal">{member.name}</p>
+                    <p className="font-bold text-base">{getDisplayName(member.name)}</p>
                     <p className="text-sm text-muted-foreground">{member.generation}</p>
                     {member.isLeader && (
-                      <p className="text-sm text-primary font-semibold">Trưởng ban</p>
+                      <p className="text-xs text-primary font-semibold">Trưởng ban</p>
                     )}
                     {member.isPresident && (
-                      <p className="text-sm text-primary font-semibold">Chủ nhiệm</p>
+                      <p className="text-xs text-primary font-semibold">Chủ nhiệm</p>
                     )}
                   </CardContent>
                 </Card>
