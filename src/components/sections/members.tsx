@@ -56,7 +56,7 @@ export function Members() {
           className="text-center font-headline text-3xl md:text-4xl font-bold mb-4 text-primary"
           variants={itemVariants}
         >
-          Thành viên Fuji Club
+          Thành viên đang hoạt động Fuji Club
         </motion.h2>
         
         <motion.div 
@@ -84,7 +84,7 @@ export function Members() {
 
         <motion.div
           layout
-          className="grid px-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 justify-center"
+          className="grid px-2 grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-4 justify-center"
         >
           <AnimatePresence>
             {filteredMembers.map((member) => (
