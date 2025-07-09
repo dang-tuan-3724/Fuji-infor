@@ -6,6 +6,8 @@ import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import logo from '@/assets/logo_clb.png';
 
 const navLinks = [
   { href: '#home', label: 'Trang chủ' },
@@ -20,10 +22,10 @@ export function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky top-4 z-50 mx-4 rounded-lg border border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-7xl items-center justify-between">
+    <header className="sticky top-4 z-50 mx-5 px-4 rounded-2xl border-2 border-red-500 border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-7xl items-center justify-between align-middle mx-4">
         <Link href="#home" className="font-headline text-xl font-bold text-primary">
-          Fuji Club - 藤クラブ
+          藤クラブ
         </Link>
 
         <nav className="hidden items-center space-x-6 md:flex">
@@ -37,8 +39,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
-
-        <div className="flex items-center space-x-2">
+        <div className=" flex items-center space-x-4 ">
+          <Image src={logo} alt="Logo" className="h-8" height={32} />
           <ThemeToggle />
           <Button
             variant="ghost"

@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const departments: Member['department'][] = [
-  'Ban Chủ Nhiệm',
+  'Ban Tổ Chức Sự Kiện',
   'Ban Truyền Thông',
   'Ban Đối Ngoại',
   'Ban Chuyên Môn',
@@ -45,13 +45,13 @@ export function Members() {
   return (
     <motion.section
       id="members"
-      className="py-16 md:py-24 bg-secondary rounded-lg mx-4"
+      className="py-16 md:py-24 bg-secondary rounded-lg px-4"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
       variants={containerVariants}
     >
-      <div className="container max-w-7xl">
+      <div className="container max-w-7xl items-center px-4">
         <motion.h2
           className="text-center font-headline text-3xl md:text-4xl font-bold mb-4 text-primary"
           variants={itemVariants}
@@ -84,7 +84,7 @@ export function Members() {
 
         <motion.div
           layout
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"
+          className="grid px-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 justify-center"
         >
           <AnimatePresence>
             {filteredMembers.map((member) => (
@@ -111,6 +111,12 @@ export function Members() {
                   <CardContent className="p-4">
                     <p className="font-bold text-base truncate">{member.name}</p>
                     <p className="text-sm text-muted-foreground">{member.generation}</p>
+                    {member.isLeader && (
+                      <p className="text-sm text-primary font-semibold">Trưởng ban</p>
+                    )}
+                    {member.isPresident && (
+                      <p className="text-sm text-primary font-semibold">Chủ nhiệm</p>
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>

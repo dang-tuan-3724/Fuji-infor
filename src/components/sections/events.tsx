@@ -37,7 +37,7 @@ export function Events() {
       viewport={{ once: true, amount: 0.1 }}
       variants={containerVariants}
     >
-      <div className="container max-w-7xl">
+      <div className="container max-w-7xl p-2">
         <motion.h2
           className="text-center font-headline text-3xl md:text-4xl font-bold mb-12 text-primary"
           variants={itemVariants}
