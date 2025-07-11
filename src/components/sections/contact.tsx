@@ -8,14 +8,14 @@ const contactInfo = [
 	{
 		icon: <Mail className="h-8 w-8 text-primary" />,
 		label: "Email",
-		value: "fuji.club.hcmut@gmail.com",
-		href: "mailto:fuji.club.hcmut@gmail.com",
+		value: "fujijapanesecorner@gmail.com",
+		href: "mailto:fujijapanesecorner@gmail.com",
 	},
 	{
 		icon: <Facebook className="h-8 w-8 text-primary" />,
 		label: "Facebook",
-		value: "facebook.com/fujiclub.hcmut",
-		href: "https://facebook.com/fujiclub.hcmut",
+		value: "https://www.facebook.com/FujiBKHCM",
+		href: "https://www.facebook.com/FujiBKHCM",
 	},
 	{
 		icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" className="h-8 w-8 text-primary"><path d="M448 209.9a210.1 210.1 0 01-122.8-39.25V349.4A162.6 162.6 0 11185 188.3v89.9A74.6 74.6 0 10237.2 347V0h49.2v128h49.1A210.1 210.1 0 01448 209.9z"/></svg>,
